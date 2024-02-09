@@ -1,0 +1,42 @@
+.alert-container {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 3px rgba(97, 97, 99, 0.75);
+    position: fixed;
+    top: 20px;
+    width: calc(100% - 32px);
+    max-width: 360px;
+    padding: 12px 16px;
+    font-size: 14px;
+    left: 50%;
+    text-align: center;
+    z-index: 3000;
+    animation: alertIn 0.3s forwards;
+}
+
+@keyframes alertIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.alert-container.out {
+    animation: alertOut 0.3s forwards;
+}
+
+@keyframes alertOut {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-40px);
+    }
+}
