@@ -32,6 +32,15 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Itu Siapa - WhatsApp anyone without adding into contacts',
+  ogTitle: 'Itu Siapa - WhatsApp anyone without adding into contacts',
+  description: 'Send message to anyone through WhatsApp. No download, no registration required.',
+  ogDescription: 'Send message to anyone through WhatsApp. No download, no registration required.',
+  ogImage: 'https://itusiapa.web.app/card.png',
+  twitterCard: 'summary_large_image',
+})
+
 let sizeTimer = null;
 const syncHeight = () => {
 	if (sizeTimer) {
