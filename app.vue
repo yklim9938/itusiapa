@@ -1,5 +1,6 @@
 <template>
 	<div class="main-page">
+		<NuxtPwaManifest />
 		<div style="text-align: center;">
 			<h1 class="title">Itu Siapa</h1>
 			<h2 class="description">WhatsApp anyone without adding into contacts.</h2>
@@ -32,6 +33,7 @@
 </template>
 
 <script setup>
+// const {$pwa} = useNuxtApp()
 useSeoMeta({
   title: 'Itu Siapa - WhatsApp anyone without adding into contacts',
   ogTitle: 'Itu Siapa - WhatsApp anyone without adding into contacts',
